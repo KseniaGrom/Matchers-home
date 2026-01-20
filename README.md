@@ -5,4 +5,4 @@
 ## Тесты
 ```bash
 npm test
-npm run coverage
+npm run lint
