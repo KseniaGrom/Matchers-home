@@ -1,4 +1,4 @@
-import sortByHealth from '../sortByHealth.js';
+import sortByHealth from '../sortByHealth';
 
 describe('sortByHealth', () => {
   test('should sort heroes by health in descending order', () => {
@@ -24,12 +24,10 @@ describe('sortByHealth', () => {
     ];
 
     const sorted = sortByHealth(heroes);
-    
     expect(heroes).toEqual([
       { name: 'мечник', health: 10 },
       { name: 'маг', health: 100 },
     ]);
-    
     expect(sorted).not.toBe(heroes);
   });
 
@@ -50,7 +48,7 @@ describe('sortByHealth', () => {
     ];
 
     const result = sortByHealth(heroes);
-    
+
     expect(result[0].health).toBe(50);
     expect(result[1].health).toBe(50);
     expect(result[2].health).toBe(30);
